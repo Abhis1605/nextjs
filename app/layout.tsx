@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "FlowTrack - Manage Your Tasks",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
       </body>
     </html>
