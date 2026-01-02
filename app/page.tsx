@@ -1,4 +1,13 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 export default function HomePage() {
+  const router = useRouter();
+
+  const handleGetStarted = () => {
+    router.push('/dashboard')
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-tr from-slate-300 to-cyan-100">
       <div className="text-center space-y-6 p-8">
@@ -6,7 +15,7 @@ export default function HomePage() {
         <p className="text-xl text-gray-600 max-w-md">
           It makes task tracking simple, clear, and stress-free.
         </p>
-        <button className="px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition cursor-pointer">
+        <button className="px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition cursor-pointer" onClick={handleGetStarted}>
           Get Started
         </button>
       </div>
