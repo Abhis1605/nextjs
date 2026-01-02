@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return(
-        <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-blue-50 to-indigo-100">
+        <div className="min-h-screen flex items-center justify-center bg-linear-to-tr from-slate-300 to-cyan-100">
       <div className="text-center space-y-6 p-8">
         <h1 className="text-6xl font-bold text-gray-900">About Us</h1>
        <ul>
@@ -15,7 +15,7 @@ export default function AboutPage() {
         <li className="text-xl text-gray-600 max-w-7xl list-disc">
                 With a clean and intuitive design, FlowTrack adapts to different workflows and working styles. Whether managing personal tasks or professional goals, it keeps everything structured and accessible.
         </li>
-        <li className="text-xl text-gray-600 max-w-7xl list-disc">
+        <li className="text-xl text-gray-600 max-w-7xl">
                 At its core, FlowTrack is about helping users work smarter and stay in control of their time. By keeping progress visible and tasks organized, it supports better productivity every day.
         </li>
        </ul>
